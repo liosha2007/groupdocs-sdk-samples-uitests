@@ -1,4 +1,3 @@
-
 For run tests you should install firefox in directory by default and maybe Selenium IDE (embeded in firefox).
 
 Also you should install:
@@ -27,6 +26,7 @@ mvn -s settings.xml clean test
 
 Example settings.xml file:
 
+```xml
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
@@ -54,6 +54,7 @@ Example settings.xml file:
 		</profile>
 	</profiles>
 </settings>
+```
 
 
 
