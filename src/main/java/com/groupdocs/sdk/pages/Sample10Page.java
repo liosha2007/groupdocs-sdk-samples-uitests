@@ -6,7 +6,7 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class Sample1Page extends Page {
+public class Sample10Page extends Page {
 
     @FindBy(how = How.NAME, using = "client_id")
     @CacheLookup
@@ -16,12 +16,19 @@ public class Sample1Page extends Page {
     @CacheLookup
     protected WebElement privateKeyField;
 
+    @FindBy(how = How.NAME, using = "fileId")
+    @CacheLookup
+    protected WebElement fileIdField;
+
+    @FindBy(how = How.NAME, using = "email")
+    @CacheLookup
+    protected WebElement emailField;
+
     @FindBy(how = How.CSS, using = "input[type=\"submit\"]")
     @CacheLookup
     protected WebElement submitButton;
 
-    public Sample1Page(WebDriver webDriver) {
+    public Sample10Page(WebDriver webDriver) {
         super(webDriver);
     }
-
 }

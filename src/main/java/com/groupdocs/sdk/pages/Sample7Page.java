@@ -6,7 +6,7 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class Sample1Page extends Page {
+public class Sample7Page extends Page {
 
     @FindBy(how = How.NAME, using = "client_id")
     @CacheLookup
@@ -20,8 +20,7 @@ public class Sample1Page extends Page {
     @CacheLookup
     protected WebElement submitButton;
 
-    public Sample1Page(WebDriver webDriver) {
+    public Sample7Page(WebDriver webDriver) {
         super(webDriver);
     }
-
 }

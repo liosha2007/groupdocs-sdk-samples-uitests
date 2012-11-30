@@ -6,21 +6,25 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class Sample1Page extends Page {
+public class Sample9Page extends Page {
 
-    @FindBy(how = How.NAME, using = "client_id")
+    @FindBy(how = How.NAME, using = "fileId")
     @CacheLookup
-    protected WebElement clientIdField;
+    protected WebElement fileIdField;
 
-    @FindBy(how = How.NAME, using = "private_key")
+    @FindBy(how = How.NAME, using = "width")
     @CacheLookup
-    protected WebElement privateKeyField;
+    protected WebElement widthField;
+
+    @FindBy(how = How.NAME, using = "height")
+    @CacheLookup
+    protected WebElement heightField;
 
     @FindBy(how = How.CSS, using = "input[type=\"submit\"]")
     @CacheLookup
     protected WebElement submitButton;
 
-    public Sample1Page(WebDriver webDriver) {
+    public Sample9Page(WebDriver webDriver) {
         super(webDriver);
     }
 

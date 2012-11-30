@@ -1,12 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Samples tests suite" verbose="5"  data-provider-thread-count="1">
+<suite name="Samples tests suite" verbose="5"
+    data-provider-thread-count="1">
 
-  <test name="Test for Sample 1">
-    <parameter name="path" value="/sample1"/>
-    <classes>
-      <class name="com.groupdocs.sdk.pages.Sample1Test"/>
-    </classes>
-  </test>
+    <test name="Test for Sample 1">
+        <parameter name="path" value="/sample1" />
+        <classes>
+            <class name="com.groupdocs.sdk.pages.Sample1Test" />
+        </classes>
+    </test>
+
+    <test name="Test for Sample 2">
+        <parameter name="path" value="/sample2" />
+        <classes>
+            <class name="com.groupdocs.sdk.pages.Sample2Test" />
+        </classes>
+    </test>
+
+    <test name="Test for Sample 6">
+        <parameter name="path" value="/sample6" />
+        <classes>
+            <class name="com.groupdocs.sdk.pages.Sample6Test" />
+        </classes>
+    </test>
+
+    <test name="Test for Sample 7">
+        <parameter name="path" value="/sample7" />
+        <classes>
+            <class name="com.groupdocs.sdk.pages.Sample7Test" />
+        </classes>
+    </test>
+
+    <test name="Test for Sample 8">
+        <parameter name="path" value="/sample8" />
+        <classes>
+            <class name="com.groupdocs.sdk.pages.Sample8Test" />
+        </classes>
+    </test>
+
+    <test name="Test for Sample 9">
+        <parameter name="path" value="/sample9" />
+        <classes>
+            <class name="com.groupdocs.sdk.pages.Sample9Test" />
+        </classes>
+    </test>
+
+    <test name="Test for Sample 10">
+        <parameter name="path" value="/sample10" />
+        <classes>
+            <class name="com.groupdocs.sdk.pages.Sample10Test" />
+        </classes>
+    </test>
 
 </suite>

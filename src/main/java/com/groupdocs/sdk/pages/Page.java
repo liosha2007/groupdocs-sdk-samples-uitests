@@ -7,24 +7,24 @@ import org.openqa.selenium.WebDriver;
  */
 public abstract class Page {
 
-	public static final String H1_TAG = "h1";
+    public static final String H1_TAG = "h1";
 
-	protected WebDriver webDriver;
+    protected WebDriver webDriver;
 
-	/*
-	 * Constructor injecting the WebDriver interface
-	 * 
-	 * @param webDriver
-	 */
-	public Page(WebDriver webDriver) {
-		this.webDriver = webDriver;
-	}
+    /*
+     * Constructor injecting the WebDriver interface
+     * 
+     * @param webDriver
+     */
+    public Page(WebDriver webDriver) {
+        this.webDriver = webDriver;
+    }
 
-	public WebDriver getWebDriver() {
-		return webDriver;
-	}
+    public WebDriver getWebDriver() {
+        return webDriver;
+    }
 
-	public String getTitle() {
-		return webDriver.getTitle();
-	}
+    public String getTitle() {
+        return webDriver.getTitle();
+    }
 }
