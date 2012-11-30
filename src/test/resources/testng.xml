@@ -2,4 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Samples tests suite" verbose="5"  data-provider-thread-count="1">
 
+  <test name="Test for Sample 1">
+    <parameter name="path" value="/sample1"/>
+    <classes>
+      <class name="com.groupdocs.sdk.pages.Sample1Test"/>
+    </classes>
+  </test>
+
 </suite>
