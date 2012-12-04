@@ -16,6 +16,24 @@
             <class name="com.groupdocs.sdk.pages.Sample2Test" />
         </classes>
     </test>
+    <test name="Test for Sample 3">
+        <parameter name="path" value="/sample3" />
+        <classes>
+            <class name="com.groupdocs.sdk.pages.Sample3Test" />
+        </classes>
+    </test>
+    <test name="Test for Sample 4">
+        <parameter name="path" value="/sample4" />
+        <classes>
+            <class name="com.groupdocs.sdk.pages.Sample4Test" />
+        </classes>
+    </test>
+    <test name="Test for Sample 5">
+        <parameter name="path" value="/sample5" />
+        <classes>
+            <class name="com.groupdocs.sdk.pages.Sample5Test" />
+        </classes>
+    </test>
 
     <test name="Test for Sample 6">
         <parameter name="path" value="/sample6" />
@@ -24,7 +42,7 @@
         </classes>
     </test>
 
-    <test name="Test for Sample 7">
+<test name="Test for Sample 7">
         <parameter name="path" value="/sample7" />
         <classes>
             <class name="com.groupdocs.sdk.pages.Sample7Test" />
