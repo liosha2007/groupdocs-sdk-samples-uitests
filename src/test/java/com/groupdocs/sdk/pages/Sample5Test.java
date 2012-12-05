@@ -11,8 +11,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Sample5Test extends TestBase {
-    protected static final String FIRST_CHECK_XPATH = "html/body/div[1]/div[2]/table/tbody/tr[2]/td[2]";
-    protected static final String SECOND_CHECK_XPATH = "html/body/div[1]/div[2]/img";
+    protected static final String FIRST_CHECK_XPATH = "html/body/div/p[1]";
     protected static final String CHECK_TITLE = "GroupDocs Python SDK Samples";
     protected Sample5Page sample5Page;
 
@@ -67,17 +66,15 @@ public class Sample5Test extends TestBase {
         sample5Page.srcPathField.sendKeys("bb.doc");
 
         sample5Page.destPathField.clear();
-        sample5Page.destPathField.sendKeys("test");
+        sample5Page.destPathField.sendKeys("test/bb.doc");
 
         sample5Page.submitButton.submit();
 
         waitForMe(By.xpath(FIRST_CHECK_XPATH), 10);
         WebElement webTdElement = webDriver.findElement(By
                 .xpath(FIRST_CHECK_XPATH));
-        WebElement webImgElement = webDriver.findElement(By
-                .xpath(SECOND_CHECK_XPATH));
-
+        
         assertNotNull(webTdElement);
-        assertNotNull(webImgElement);
+       
     }
 }
